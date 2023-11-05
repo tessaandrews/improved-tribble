@@ -1,0 +1,25 @@
+<main class="container">
+  {{#if loggedIn}}
+  <div class="create-form">
+    <form action="/create-blog-post" method="POST">
+      <input type="text" name="category" placeholder="Category" required>
+      <input type="text" name="title" placeholder="Title" required>
+      <textarea name="description" placeholder="Description" required class="large-textarea"></textarea>
+      <button type="submit">Create Blog Post</button>
+    </form>
+  </div>
+
+  <div>
+    {{#each blogPosts as |blogPost|}}
+    {{> blogPost-details}}
+    {{/each}}
+  </div>
+  {{/if}}
+  {{!-- <div>
+    <h3 class="login-text">Login to Join a Conversation</h3>
+  </div> --}}
+</main>
+{{!-- <h1>Random Blog</h1>
+<h2>
+  {{randomBlog.id}}
+</h2> --}}

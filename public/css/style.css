@@ -1,0 +1,274 @@
+header, .project:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .no-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #1b89bc;
+    text-decoration: none;
+    font-size: 100%;
+  }
+  
+  .no-button:hover {
+    color: #065b83;
+    text-decoration: underline;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+  }
+  
+  header {
+    /* background-color: #333; */
+    
+    color: black;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  
+  h1 {
+    color: rgb(22, 22, 22);
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-left: 20px;
+  }
+  
+  h2 {
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 11px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    padding-left: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    color: black; /* Text color */
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style the button */
+  #logout {
+    background-color: #f5f5f5;
+    /* color: whitesmoke; Text color */
+    /* padding: 10px 20px; */
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .button:hover {
+    background-color: lightblue; /* Change color on hover */
+  }
+  
+  .login-container {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav {
+    /* position: fixed; */
+    /* top: 110px; */
+    /* right: 0; */
+    /* padding: 30px; */
+    /* background-color: #333;  */
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .container-nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  
+  .nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 30px;
+  }
+  
+  #centered-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    background-image: linear-gradient(to right,#d4d4d4,#383838);  /* Change the background color to match the header */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    color: #222222; /* Text color */
+  }
+  
+  .container-post {
+    background-color: #e4e4e4;  /* Change the background color to match the header */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    color: #222222; /* Text color */
+  }
+  
+  .container-comment {
+    background-color: #e4e4e4;  /* Change the background color to match the header */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    color: #222222; /* Text color */
+  }
+  
+  .blogPost-category {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #fff; /* Text color */
+  }
+  
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  
+  /* Style individual comments within the .flex-row section */
+  .blogPost-description {
+    background-color: #333; /* Change the background color to match the container */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;  /* Text color */
+  }
+  
+  
+  .card {
+    margin: 20px;
+    /* display: flex; */
+    justify-content: end;
+    border: 7px double black;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+    color: var(--dark);
+  }
+  
+  .card-header {
+    margin: 10px;
+  
+    border-radius: 20px;
+  }
+  
+  
+  .comments {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  .card-body {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .comments-category {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px var(--secondary);
+    border: 10px groove var(--light);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  
+  .blogPost {
+    flex: 4;
+    background-color: #000000;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .create-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-form2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .large-textarea {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+  }
+  
+  .join-today {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .container-blog {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .login-text {
+    display: flex;
+    justify-content: center;
+  }
