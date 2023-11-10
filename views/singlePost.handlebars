@@ -1,0 +1,17 @@
+
+<div class="card">
+    <div class="card-header">
+        <h5>{{posts.title}}</h5>
+    </div>
+    <div class="card-body">
+      <p>{{posts.description}}</p>
+    </div>
+    <p>Written by: {{posts.user.name}}</p>
+</div>
+<form action="">
+  <input type="text">
+  <button></button>
+</form>
+
+{{#each posts.comments}}
+{{/each}}

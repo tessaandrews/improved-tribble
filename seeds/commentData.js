@@ -1,53 +1,59 @@
-const {Comment} = require ('../models');
+const { Comment } = require('../models');
 
 const commentData = [
   {
-    category: 'Science',
-    post_user: 1,
-    date: '11/22/2015',
+    id: 1,
     description: 'There are 8 planets!',
+    post_id: 1,
+    user_id: 3
+
+
 
   },
   {
-    category: 'General',
-    post_user: 2,
-    date: '10/20/2021',
+    id: 2,
     description: 'It occurs in order to save natural light, and was originally due to saving power and fuel during WW1',
+    post_id: 2,
+    user_id: 1
+
+
   },
   {
-    category: 'Health and Lifestyle',
-    post_user: 3,
-    date: '10/20/2021',
+    id: 3,
     description: 'Are you in a calorie deficit?',
+    post_id: 3,
+    user_id: 2
+
+
   },
   {
-    category: 'Advice',
-    post_user: 4,
-    date: '09/15/2021',
+    id: 4,
     description: 'If they dismiss your feelings, and are very private!',
+    post_id: 4,
+    user_id: 3
+
+
 
   },
   {
-    category: 'Food',
-    post_user: 5,
-    date: '10/20/2021',
+    id: 5,
     description: 'Quaker Oats pancake mix has been recalled.',
+    post_id: 5,
+    user_id:1
+
+
   },
   {
-    category: 'Food',
-    post_user: 5,
-    date: '10/24/2021',
+    id: 6,
     description: 'Idk about recalls, but i heard skittles were banned in Cali.',
-  },
-  {
-    category: 'News',
-    post_user: 6,
-    date: '10/10/2023',
-    description: 'A former president was indicted!',
+    post_id: 6,
+    user_id: 2
+
 
   },
+  ,
 ]
-  
-  const seedComment = () => Comment.bulkCreate(commentData);
 
-  module.exports = seedComment;
+const seedComment = () => Comment.bulkCreate(commentData);
+
+module.exports = seedComment;
