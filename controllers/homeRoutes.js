@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const { Post, Comment } = require("../../models");
+const { Post, Comment } = require("../models");
 // Import the custom middleware
-const withAuth = require("../../utils/auth");
+const withAuth = require("../utils/auth");
 
 // GET all posts for the homepage
 router.get("/", async (req, res) => {
@@ -44,7 +44,7 @@ router.get("/Post/:id", withAuth, async (req, res) => {
     });
 
     const Posts = PostData.get({ plain: true });
-    console.log("Checking blogPosts")
+    console.log("Checking Posts")
     console.log(Posts)
     console.log(Posts.comment[0].description)
     res.render("Post", { Posts, loggedIn: req.session.loggedIn });
