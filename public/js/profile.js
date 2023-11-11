@@ -1,14 +1,14 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const user = document.querySelector('#post-user').value.trim();
+    const name = document.querySelector('#post-user').value.trim();
     const title = document.querySelector('#post-title').value.trim();
     const description = document.querySelector('#post-desc').value.trim();
   
-    if (user && title && description) {
+    if (name && title && description) {
       const response = await fetch(`/api/posts`, {
         method: 'POST',
-        body: JSON.stringify({ user, title, description }),
+        body: JSON.stringify({ name, title, description }),
         headers: {
           'Content-Type': 'comment/js',
         },
@@ -17,7 +17,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to create project');
+        alert('Failed to create post');
       }
     }
   };
@@ -33,7 +33,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to delete project');
+        alert('Failed to delete post');
       }
     }
   };
