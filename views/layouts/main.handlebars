@@ -14,9 +14,9 @@
     <div class="container-nav">
       <nav class='nav'>
         <a href="/">Home</a>
-       
-        {{#if loggedIn}}
+       {{#if logged_in}}
          <a href="/">Dashboard</a>
+         <a href="/profile">Profile</a> |
         <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
         <a href="/login">Login</a>

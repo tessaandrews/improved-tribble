@@ -1,17 +1,16 @@
 
 <div class="card">
     <div class="card-header">
-        <h5>{{posts.title}}</h5>
+        <h5>{{post.title}}</h5>
     </div>
     <div class="card-body">
-      <p>{{posts.description}}</p>
+      <p>{{post.description}}</p>
     </div>
-    <p>Written by: {{posts.user.name}}</p>
+    <p>Written by: {{post.user.name}}</p>
 </div>
-<form action="">
-  <input type="text">
-  <button></button>
-</form>
+<form action="/create-post" method="POST"></form>
+    <button type="submit">Leave Comment</button>
+</div>
 
 {{#each posts.comments}}
 {{/each}}

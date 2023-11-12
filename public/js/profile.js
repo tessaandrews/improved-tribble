@@ -1,7 +1,7 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const name = document.querySelector('#post-user').value.trim();
+    const name = document.querySelector('#post-name').value.trim();
     const title = document.querySelector('#post-title').value.trim();
     const description = document.querySelector('#post-desc').value.trim();
   
@@ -9,9 +9,7 @@ const newFormHandler = async (event) => {
       const response = await fetch(`/api/posts`, {
         method: 'POST',
         body: JSON.stringify({ name, title, description }),
-        headers: {
-          'Content-Type': 'comment/js',
-        },
+        headers: {'Content-Type': 'application/json'},
       });
   
       if (response.ok) {
