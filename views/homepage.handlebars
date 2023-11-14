@@ -1,9 +1,9 @@
 {{#each posts as |post|}}
 <div class="card">
     <div class="create-form">
-        <form action="/post/:id" method="POST"></form>
-        <button type="submit">View Post</button>
-        <h5> <a href="/post/{{post.id}}"></a>{{post.title}} </a></h5>
+       
+        <button type="submit" > <a href="/post/{{post.id}}">View Post</a></button>
+        <h5> <a href="/post/{{post.id}}">{{post.title}}</a></h5>
     </div>
     <p>Written by: {{post.user.name}}</p>
 </div>

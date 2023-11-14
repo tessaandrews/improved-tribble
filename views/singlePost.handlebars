@@ -1,16 +1,36 @@
 
 <div class="card">
     <div class="card-header">
-        <h5>{{post.title}}</h5>
+        {{log "post title" posts.title}}
+        <h5 data-id="{{posts.id}}"id="post-title">{{posts.title}}</h5>
     </div>
     <div class="card-body">
-      <p>{{post.description}}</p>
+      <p>{{posts.description}}</p>
     </div>
-    <p>Written by: {{post.user.name}}</p>
+    <p>Written by: {{posts.user.name}}</p>
 </div>
-<form action="/create-post" method="POST"></form>
-    <button type="submit">Leave Comment</button>
 </div>
 
-{{#each posts.comments}}
+{{#if logged_in}}
+<form class="form comment-form">
+<input type="text" id="comment-input">
+ <button type="submit">Leave Comment</button>
+</form>
+
+{{else}}
+<h5>Login to  Comment on the Post!</h5>
+{{/if}}
+   
+{{#each posts.comments as |comment|}}
+<div class="card">
+    <div class="card-header">
+       <h5 class="card-title">{{comment.user.name}}</h5>
+       
+    </div>
+      <div class="card-body">
+        <p class="card-text">{{comment.description}}</p>
+      </div>
+
 {{/each}}
+
+<script src="/js/comment.js"></script>

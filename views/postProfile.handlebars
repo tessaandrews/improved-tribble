@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header">
+        
+        <textarea id="post-title">{{post.title}}</textarea>
+    </div>
+    <div class="card-body">
+      <textarea id="post-desc">{{post.description}}</textarea>
+    </div>
+   <div class="card-footer">
+    <button class="btn btn-sm btn-warning updateBtn"  data-id="{{post.id}}">EDIT</button>
+     <button class="btn btn-sm btn-danger deleteBtn"  data-id="{{post.id}}">DELETE</button>
+   </div>
+</div>
+</div>
+
+<script src="/js/edit.js"></script>
