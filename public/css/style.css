@@ -2,20 +2,6 @@ header, .project:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
   
-  .no-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    color: #1b89bc;
-    text-decoration: none;
-    font-size: 100%;
-  }
-  
-  .no-button:hover {
-    color: #065b83;
-    text-decoration: underline;
-  }
   
   body {
     margin: 0;
@@ -66,27 +52,11 @@ header, .project:not(:last-child) {
     font-family: Arial, sans-serif;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   }
+   
   
-  /* Style the button */
-  #logout {
-    background-color: #f5f5f5;
-    /* color: whitesmoke; Text color */
-    /* padding: 10px 20px; */
-    border: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    /* font-weight: bold; */
-    font-size: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  .button:hover {
+  /*.button:hover {
     background-color: lightblue; /* Change color on hover */
-  }
+   */
   
   .login-container {
     text-align: center;
@@ -97,7 +67,7 @@ header, .project:not(:last-child) {
     align-items: center;
   }
   
-  .nav {
+  #navBar {
     /* position: fixed; */
     /* top: 110px; */
     /* right: 0; */
@@ -105,7 +75,7 @@ header, .project:not(:last-child) {
     /* background-color: #333;  */
     color: #fff;
     display: flex;
-    justify-content: flex-end;
+    align-content: space-between;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
@@ -117,13 +87,14 @@ header, .project:not(:last-child) {
   }
   
   
-  .nav a {
+  .nav a { 
     color: black;
     text-decoration: none;
     margin: 0 10px;
     font-size: 30px;
-  }
+  } 
   
+
   #centered-image {
     max-width: 100%;
     height: auto;
@@ -151,7 +122,7 @@ header, .project:not(:last-child) {
     color: #222222; /* Text color */
   }
   
-  .container-comment {
+  .container-comments {
     background-color: #e4e4e4;  /* Change the background color to match the header */
     padding: 30px;
     border: 1px solid #ccc;
@@ -160,13 +131,6 @@ header, .project:not(:last-child) {
     max-width: 1000px;
     text-align: center;
     color: #222222; /* Text color */
-  }
-  
-  .blogPost-category {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #fff; /* Text color */
   }
   
   
@@ -178,7 +142,7 @@ header, .project:not(:last-child) {
   
   
   /* Style individual comments within the .flex-row section */
-  .blogPost-description {
+  .post-description {
     background-color: #333; /* Change the background color to match the container */
     border: 1px solid #ccc;
     padding: 10px;
@@ -189,9 +153,9 @@ header, .project:not(:last-child) {
   
   .card {
     margin: 20px;
-    /* display: flex; */
-    justify-content: end;
-    border: 7px double black;
+    /*display: flex; */
+    /*justify-content: end; */
+    border: 10px double black;
     border-radius: 10px;
     background-color: #e4e4e4;
     color: var(--dark);
@@ -199,12 +163,11 @@ header, .project:not(:last-child) {
   
   .card-header {
     margin: 10px;
-  
     border-radius: 20px;
   }
   
   
-  .comments {
+  .comment {
     width: 50%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -216,7 +179,7 @@ header, .project:not(:last-child) {
     font-weight: bold;
   }
   
-  .comments-category {
+  .comments {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 2px 2px 5px var(--secondary);
@@ -227,7 +190,7 @@ header, .project:not(:last-child) {
     padding-left: 100px;
   }
   
-  .blogPost {
+  .post {
     flex: 4;
     background-color: #000000;
     padding: 50px;
@@ -257,18 +220,10 @@ header, .project:not(:last-child) {
     height: 200px; /* Adjust the height as needed */
   }
   
-  .join-today {
-    font-size: 25px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .container-blog {
-    display: flex;
-    flex-direction: row;
-  }
-  
+ 
   .login-text {
     display: flex;
     justify-content: center;
   }
+
+ 

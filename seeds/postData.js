@@ -21,7 +21,7 @@
     },
     {
       id: 4, 
-      title: 'Relationsips',
+      title: 'Relationships',
       description: 'What are immediate red flags when pursuing a relationship?',
      user_id: 1
     },
