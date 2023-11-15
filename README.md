@@ -32,4 +32,4 @@
  ## Questions
 
  If you would like to reach out or have any questions you can email me at [tessa4158@icloud.com](mailto:tessa4158@icloud.com).
- If you would like yo see other projects I have built feel free to check my personal github : [tessaandrews](https://github.com/tessaandrews)
+ If you would like you see other projects I have built, feel free to check my personal github! : [tessaandrews](https://github.com/tessaandrews)
