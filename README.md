@@ -14,7 +14,10 @@
   * [Tests](#test)
   * [Questions](#questions)
   
+## Screenshot of Application
+![Alt text](<Screenshot 2023-11-14 at 8.03.07 PM.png>)
 
+## Link to Deployed Application
 
   ## Installation
   N/A
