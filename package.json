@@ -1,5 +1,5 @@
 {
-    "name": "crowd-funding",
+    "name": "improved-tribble",
     "version": "1.0.0",
     "description": "",
     "main": "server.js",
@@ -25,6 +25,9 @@
       "eslint": "^7.12.1",
       "eslint-config-prettier": "^6.15.0",
       "prettier": "^2.1.2"
+    },
+    "engines": {
+      "node":"18.18.0"
     }
   }
   
