@@ -24,7 +24,6 @@
         <a href="/">The Tech Blog</a>
       </nav>
       </header>
-    </div>
 
   <main class="container container-fluid mt-5">
       {{{body}}}
@@ -33,8 +32,9 @@
       </div>
 
 
-
+{{#if logged_in}}
   <script src="/js/logout.js"></script>
+  {{/if}}
  
 </body>
 
